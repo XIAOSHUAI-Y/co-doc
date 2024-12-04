@@ -1,0 +1,102 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.layout {
+  display: flex;
+  height: 100vh;
+}
+
+/* 左侧导航栏样式 */
+.left-nav {
+  width: 250px;
+  background-color: #f9f9f9;
+  border-right: 1px solid #e0e0e0;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.auth-btn {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+button {
+  flex: 1;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  cursor: pointer;
+  text-align: center;
+}
+
+button:hover {
+  background-color: #f0f0f0;
+}
+
+.menu {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.menu-item:hover {
+  background-color: #f0f0f0;
+}
+
+/* 主内容区域样式 */
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 10px 20px;
+  background-color: #e6e3e37a;
+  justify-content:center;
+}
+
+.tab {
+  padding: 0 20px;
+  cursor: pointer;
+
+}
+
+.active {
+  border-bottom: 2px solid #007bff;
+  font-weight: bold;
+}
+
+.editor {
+  flex: 1;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  margin: 20px;
+  border-radius: 5px;
+  color: #555;
+}
