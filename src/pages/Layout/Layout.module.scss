@@ -28,20 +28,19 @@ body {
   display: flex;
   gap: 10px;
   margin-bottom: 20px;
-}
-
-button {
-  flex: 1;
-  padding: 10px 15px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  background-color: #fff;
-  cursor: pointer;
-  text-align: center;
-}
-
-button:hover {
-  background-color: #f0f0f0;
+  button {
+    flex: 1;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  button:hover {
+    background-color: #f0f0f0;
+  }
 }
 
 .menu {
