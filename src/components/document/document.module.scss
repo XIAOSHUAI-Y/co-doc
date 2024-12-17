@@ -66,76 +66,7 @@ button{
     }
     .fileList {
       margin: 30px 0 0 60px;
-      .fileInfo {
-        display: flex;
-        margin-bottom: 6px;
-        padding: 10px;
-        // justify-content: space-between; // 使内容分布在两边
-        align-items: center;
-        &:hover {
-          cursor: pointer;
-          background-color: #f5f5f5;
-          border-radius: 5px;
-        }
-        .externalTag {
-          font-size: 12px;
-          margin-left: 10px;
-          padding: 4px;
-          color: rgb(37, 99, 235);
-          background-color: rgba(116, 158, 248, 0.1);
-        }
-        .fileDate {
-          font-size: 14px;
-          color: #838282;
-          margin-left: auto;
-          // display: flex;
-          // padding-right: 10px;
-        }
-
-        .moreOptions {
-          position: relative; // 使其绝对定位的子元素相对于这个元素定位
-          margin-left: 30px; // 添加左边距
-          // background-color: turquoise;
-    
-          .dot {
-            font-size: 20px; // 设置点的大小
-            text-align: center;
-            padding: 6px 10px 10px 10px;
-            cursor: pointer;
-            &:hover {
-              background-color: #e3e3e3;
-              border-radius: 5px;
-            }
-          }
-    
-          .options {
-            display: none; // 默认隐藏选项
-            position: absolute; // 绝对定位
-            right: 0; // 右对齐
-            background-color: #fff; // 背景色
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 5px;
-            z-index: 1; // 保证在其他元素之上
-    
-            .option {
-              width: 120px;
-              margin: 5px;
-              padding: 5px;
-              border-radius: 3px;
-              cursor: pointer;
-              font-size: 14px;
-    
-              &:hover {
-                background-color: #ebebeb; // 悬停时的背景颜色
-              }
-            }
-          }
-    
-          &:hover .options {
-            display: block; // 悬停时显示选项
-          }
-        }
-      }
+      
     }
   }
 }

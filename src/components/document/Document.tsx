@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import styles from './document.module.scss'
+import DocItem from './document-item/docItem';
 
 export default function Document() {
 
@@ -81,21 +82,16 @@ export default function Document() {
             <h2>所有文档</h2>
             <ul className={styles['fileList']}>
               {allFiles.map((file, index) => (
-                <li key={index} className={styles['fileItem']}>
-                  <div className={styles['fileInfo']}>
-                    <span>{file.name}</span>
-                    {file.external && <span className={styles['externalTag']}>外部</span>}
-                    <span className={styles['fileDate']}>{file.date}</span>
-                    <div className={styles['moreOptions']}>
-                      <span className={styles['dot']}>...</span>
-                      <div className={styles['options']}>
-                        <div className={styles['option']}>重命名</div>
-                        <div className={styles['option']}>删除</div>
-                        <div className={styles['option']}>收藏</div>
-                      </div>
-                    </div>
-                  </div>
-                </li>
+               <DocItem 
+                file={file} 
+                index={index} 
+                key={index}
+                handleNameChange={
+                  (newName, index) => {
+                    allFiles[index].name = newName;
+                  }
+                }
+                />
               ))}
             </ul>
           </div>
